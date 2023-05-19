@@ -87,6 +87,66 @@ section.intro {
   border-radius: 1rem;
 }
 
+section.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7rem 0;
+}
+
+section.promo div:first-child {
+  margin-bottom: 2rem;
+}
+
+/* section.promo div:last-child {
+  flex: 1;
+  flex-basis: 75%;
+} */
+
+section.promo img {
+  width: 100%;
+}
+
+section.promo h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+section.promo p {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: left;
+  line-height: 1.75rem;
+}
+
+@media screen and (min-width: 1000px) {
+  section.promo {
+    flex-direction: row;
+    /* padding: 0; */
+  }
+
+  section.promo div:first-child {
+    flex: 2;
+    flex-basis: 100%;
+  }
+
+  section.promo div:last-child {
+    flex: 1;
+    flex-basis: 75%;
+  }
+
+  section.promo h1 {
+    margin-bottom: 3rem;
+  }
+
+  section.promo p {
+    margin: 0 3rem;
+    line-height: 2.5rem;
+  }
+}
+
 section.cta {
   display: flex;
   flex-direction: column;
